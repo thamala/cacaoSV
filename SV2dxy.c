@@ -15,7 +15,7 @@
  
  ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
 
- Program for Dxy and Fst between the major and minor SV arrangements.
+ Program for estimating Dxy and Fst between the major and minor SV arrangements.
 
  Compiling: gcc SV2dxy.c -o SV2dxy -lm
 
