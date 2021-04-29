@@ -2,7 +2,7 @@
 The repo contains the following software and scripts:
 <br>
 <br>
-&nbsp;&nbsp;&nbsp;&nbsp;mumco_gaps.c: A program for filering SVs identified with MUM&Co based on their gap content<br>
+&nbsp;&nbsp;&nbsp;&nbsp;mumco_gaps.c: A program for filtering SVs identified with MUM&Co based on their gap content<br>
 &nbsp;&nbsp;&nbsp;&nbsp;mumco2vcf.c: A program for combining SVs indentified with MUM&Co into a joined VCF file<br>
 &nbsp;&nbsp;&nbsp;&nbsp;SVstat.c: A program for estimating basic statistics (SFS, covariance matrix for PCA, *F*<sub>ST</sub>, *d*<sub>XY</sub>) for SVs<br>
 &nbsp;&nbsp;&nbsp;&nbsp;SV2exp.c: A program for compiling RNA- and DNA-seq read counts for genes within 5 Kb of SVs<br>
