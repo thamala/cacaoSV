@@ -1,0 +1,27 @@
+//SLiM 3 (v3.3): burn in (100*N) for inv_del.slim script
+
+initialize() {
+	initializeMutationRate(7.77e-8);
+	initializeMutationType("m0", 0.5, "f", 0.0); // neutral mutations
+	initializeMutationType("m1", 0, "g", -0.03, 0.12); //deleterious mutations
+	initializeGenomicElementType("g1", c(m0, m1), c(1.0, 2.31)); //deleterious muts are 2.31 times more common 
+	initializeGenomicElement(g1, 0, 99999);
+	initializeRecombinationRate(4.334e-06);
+	//~91% of recombination events are gene conversions, giving a crossover rate of 3.94e-7 and a gene conversion rate of 3.94e-6
+	initializeGeneConversion(0.9090909, 335, 1, 0);
+}
+
+1 {
+	sim.addSubpop("p1", 5000);
+}
+
+1: late(){
+	if(sim.generation != 1 & sim.generation % 1000 != 0)
+		return;
+	cat("Generation "+sim.generation+"\n");
+}
+
+500000 late(){
+	sim.outputFull("burn_in.txt");
+	sim.simulationFinished();
+}
