@@ -1,4 +1,5 @@
 #A script for testing the association between SV genotypes and gene expression
+#Tuomas Hämälä, April 2021
 
 library(qvalue)
 
