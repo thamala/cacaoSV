@@ -1,4 +1,5 @@
 #A script for conducting an admixture-based genome scan
+#Tuomas Hämälä, April 2021
 
 library(robust)
 library(qvalue)
