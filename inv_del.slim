@@ -58,7 +58,7 @@ fitness(m2){
 	else if((sim.generation-500001) % 1000 == 0){
 		tot = 0;
 		while(tot == 0){
-			samp = sample(p1.individuals, 100, T);
+			samp = sample(p1.individuals, 100, F);
 			tot = sum(samp.countOfMutationsOfType(m2));	
 		}
 		if(tot > 100)
