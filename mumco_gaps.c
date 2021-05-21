@@ -23,7 +23,7 @@
  -sv [file] SV calls produced by MUM&Co
  -ref [file] fasta file for the reference assembly
  -que [file] fasta file for the query assembly
- -chr [int] length of the longest chromosome (some bigger value)
+ -chr [int] length of the longest chromosome (or some bigger value)
  -gap [double] only keep SVs with lower propotion of gaps
 
  Examples:
