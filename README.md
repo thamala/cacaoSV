@@ -1,6 +1,6 @@
 # cacaoSV
 The repo containts code used in:<br>
-Hämälä T, Wafula EK, Guiltinan MJ, Ralph PE, dePamphilis CW & Tiffin P (2021). Genomic structural variants constrain and facilitate adaptation in natural populations of Theobroma cacao, the chocolate tree. PNAS. Doi: https://doi.org/10.1073/pnas.2102914118
+Hämälä T, Wafula EK, Guiltinan MJ, Ralph PE, dePamphilis CW & Tiffin P (2021). Genomic structural variants constrain and facilitate adaptation in natural populations of Theobroma cacao, the chocolate tree. PNAS. https://doi.org/10.1073/pnas.2102914118
 <br>
 <br>
 mumco_gaps.c: A program for filtering SVs identified with MUM&Co based on their gap content<br>
