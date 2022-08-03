@@ -95,7 +95,7 @@ void openFiles(int argc, char *argv[]){
     char *temp1=NULL, *temp2=NULL;
     const char *vars[5]={"INS","DEL","DUP","TRA","INV"};
     SV_s *svl;
-    FILE *sv_file, *snp_file, *mat_file;
+    FILE *sv_file=NULL, *snp_file=NULL, *mat_file=NULL;
     
     fprintf(stderr,"\nParameters:\n");
     
@@ -172,7 +172,7 @@ void openFiles(int argc, char *argv[]){
     fprintf(stderr,"\n");
     
     if(sv_file == NULL || snp_file == NULL || mat_file == NULL){
-        fprintf(stderr,"\nERROR: The following are required: -sf [file] -snp [file] -mat [file]\n\n");
+        fprintf(stderr,"\nERROR: The following are required: -sv [file] -snp [file] -mat [file]\n\n");
         exit(EXIT_FAILURE);
     }
     
